@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>Fiduxion</title>
+</head>
+<body>
+    <!--Place holder para moverse rapido entre paginas-->
+    <nav>
+        <ul class="iconosHeader">
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../pages/producto.html">Productos</a>
+            </li>
+            <li>
+                <a href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
+            </li>
+            <li>
+                <a href="../pages/empresa.html">Empresa</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!--Esto es el header de toda la pagina, utilizo inconos sacados de la pagina
+    font awesome, el link esta abajo de todo fuera del body-->
+    <header>
+        <div>
+            <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
+            <nav>
+                <ul>
+                    <!--Esto seria el buscador en un futuro-->
+                    <input type="text" name="" id="">
+
+                    <li class="iconosHeader">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </li>
+
+                    <li class="iconosHeader"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+
+                    <li class="iconosHeader">
+                        <a href="https://wa.me/5493412608875" target="_blank" class="iconosHeader"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li class="iconosHeader">
+
+                    <li class="iconosHeader">
+                        <a href="../pages/preguntasFrecuentes.html" class="iconosHeader">Preguntas Frecuentes</a>
+                    </li>
+
+                    <li class="iconosHeader">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <input type="button" value="Carrito">
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <section>
+        <form>
+            <h2>Envianos un mensaje</h2>
+            <fieldset>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="" id="nombre" required placeholder="Ingresa tu nombre">
+                    </div>
+                
+                    <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" required placeholder="Ingresa tu E-mail"> 
+                    </div>
+                    
+                    <div>
+                    <label for="tele">Telefono</label>
+                    <input type="tel" name="" id="tele" required placeholder="Ingresa tu telefono celular">
+                    </div>
+                    
+                    <div>
+                        <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                
+            </fieldset>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li class="itemFooter">
+                    <div class="containerFooter">
+                        <h1>Contacto</h1>
+                        <ul class="footerList">
+                            <li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7952991293632!2d-60.640611284288916!3d-32.95641347971383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab57bd0eee41%3A0xeeb91ab8599cdd73!2sMetro%20Infinito!5e0!3m2!1ses-419!2sar!4v1647105406767!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </li>
+                        
+                            <li>
+                                <p>Numero de Whatsapp:<a href="https://wa.me/5493412608875" target="_blank">+54 9 341-2608875</a></p>
+                            </li>
+    
+                            <li>
+                                <p>Horario de atencion: 7:00 a 15:00</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="itemFooter">
+                    <div class="containerFooter">
+                        <h1>Links de interes</h1>
+                        <ul class="footerList">
+                            <li>
+                                Arma tu PC
+                            </li>
+                            <li>
+                                <a href="../pages/empresa.html">La empresa</a>
+                            </li>
+                        
+                            <li>
+                                <a href="../pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+        
+                <li class="itemFooter">
+                    <div class="containerFooter">
+                        <h1>Data fiscal</h1>
+                        <ul class="footerList">
+                            <li>
+                                <i class="fa-solid fa-lock"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-shield"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script src="https://kit.fontawesome.com/486f17122d.js" crossorigin="anonymous"></script>
+</html>
