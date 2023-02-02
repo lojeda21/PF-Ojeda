@@ -42,21 +42,13 @@ h2{
     font-size: 21px;
 }
 
-.conteinerBotones{
-    padding: 0.5rem 0 0.5rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .gridHeader{
     display: grid;
-    grid-template-columns: 0.6fr 4.2fr 0.6fr 0.5fr;
+    padding-bottom: 0.5vh;
+    grid-template-columns: 0.8fr 4.2fr 0.6fr 0.5fr;
 }
 
 .barraHeader{
-    border: 1px solid red;
     color: azure;
     display: flex;
     flex-wrap: wrap;
@@ -65,15 +57,28 @@ h2{
 .barraHeader li{
     padding-right: 0.4rem;
 }
+
 .buscadorHeader{
     padding: 0 5% 0 5%;
 }
-.carrito, .pregFrec{
-    border: 1px solid black;
-    display: flex;
-    margin-right: 2vw;
-    justify-content: flex-end;
+
+.busq{
+    width: 100%;
 }
+
+.carrito, .pregFrec{
+    display: flex;
+    justify-content: center;
+}
+
+.conteinerBotones{
+    padding: 1vh 0 1vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .slider{
     width: 100%;
     height: auto;
