@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,238 +12,154 @@
     <title>Fiduxion</title>
 </head>
 <body>
-    <!--Place holder para moverse rapido entre paginas-->
-    <nav>
-        <ul class="iconosHeader">
-            <li>
+    <div class="conteinerPagina">    
+        <!--Boton flotante de menu-->
+        <div class="menu">
+            <input type="checkbox" id="toggle">
+            <label for="toggle" class="button-menu">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </label>
+
+            <nav class="nav">
                 <a href="../index.html">Inicio</a>
-            </li>
-            <li>
                 <a href="../pages/producto.html">Productos</a>
-            </li>
-            <li>
                 <a href="../pages/contacto.html">Contacto</a>
-            </li>
-            <li>
                 <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
-            </li>
-            <li>
                 <a href="../pages/empresa.html">Empresa</a>
-            </li>
-        </ul>
-    </nav>
+            </nav>
+        </div>
 
-    <!--Esto es el header de toda la pagina, utilizo inconos sacados de la pagina
-    font awesome, el link esta abajo de todo fuera del body-->
-    <header>
-        <div>
-            <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
-            <nav>
-                <ul>
-                    <!--Esto seria el buscador en un futuro-->
-                    <input type="text" name="" id="">
+        <!--Esto es el header de toda la pagina, utilizo inconos sacados de la pagina
+        font awesome, el link esta abajo de todo fuera del body-->
+        <header>
+            <div>
+                <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
+                <nav class="gridHeader">
+                        <!--Esto seria el buscador en un futuro-->
+                    <div class="buscadorHeader">
+                        <input type="text" class="busq"name="" id="">
+                    </div>
 
-                    <li class="iconosHeader">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </li>
+                    <ul class="barraHeader">
+                        <li>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </li>
 
-                    <li class="iconosHeader"> 
-                        <i class="fa-brands fa-instagram"></i>
-                    </li>
+                        <li> 
+                            <i class="fa-brands fa-instagram"></i>
+                        </li>
 
-                    <li class="iconosHeader">
-                        <a href="https://wa.me/5493412608875" target="_blank" class="iconosHeader"><i class="fa-brands fa-whatsapp"></i></a>
-                    </li class="iconosHeader">
+                        <li>
+                            <a href="https://wa.me/5493412608875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
 
-                    <li class="iconosHeader">
-                        <a href="../pages/preguntasFrecuentes.html" class="iconosHeader">Preguntas Frecuentes</a>
-                    </li>
+                    <div class="pregFrec">
+                            <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </div>
 
-                    <li class="iconosHeader">
+                    <div class="carrito">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <input type="button" value="Carrito">
-                    </li>
-                </ul>
-            </nav>
-    </header>
+                    </div>
+                </nav>
+        </header>
 
-    <section id="productos" class="seccionProductos">
-        <a href="../pages/producto.html"><h1>Productos</h1></a>
-        <ul>
-            <li class="itemProducto">
-            <div class="card1">
-                <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
+        <section id="productos" class="seccionProductos">
+            <a href="..pages/producto.html" class="tituloProd"><h1>Productos</h1></a>
+            <ul class="listProducto">
 
-                <h3 class="text-center text-black">Placa Madre</h3>
-                <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                <p class="text-center text-black">Precio: $2000</p>
-                <button>Agregar al carrito</button>
-            </div>
-            </li>
-            <li class="itemProducto">
-            <div class="card1">
-                <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-
-                <h3 class="text-center text-black">Placa Madre</h3>
-                <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                <p class="text-center text-black">Precio: $2000</p>
-                <button>Agregar al carrito</button>
-            </div>
-            </li>
-            <li class="itemProducto">
-            <div class="card1">
-                <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-
-                <h3 class="text-center text-black">Placa Madre</h3>
-                <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                <p class="text-center text-black">Precio: $2000</p>
-                <button>Agregar al carrito</button>
-            </div>
-            </li>
-            <li class="itemProducto">
-            <div class="card1">
-                <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-
-                <h3 class="text-center text-black">Placa Madre</h3>
-                <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                <p class="text-center text-black">Precio: $2000</p>
-                <button>Agregar al carrito</button>
-            </div>
-            </li>
-
-            <li class="itemProducto">
-            <div class="card1">
-                <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-
-                <h3 class="text-center text-black">Placa Madre</h3>
-                <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                <p class="text-center text-black">Precio: $2000</p>
-                <button>Agregar al carrito</button>
-            </div>
-            </li>
-
-            <li class="itemProducto">
-            <div class="card1">
-                <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-
-                <h3 class="text-center text-black">Placa Madre</h3>
-                <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                <p class="text-center text-black">Precio: $2000</p>
-                <button>Agregar al carrito</button>
-            </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
+                <li class="itemProducto">
+                    <img src="../images/placaMadre.jpg" alt="Paca madre IGAME Z490 VULCAN" class="imagen1">
                     <h3 class="text-center text-black">Placa Madre</h3>
                     <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
+                    <p class="text-center text-black">Precio: $200000</p>
                     <button>Agregar al carrito</button>
-                </div>
-            </li>
+                </li>
 
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
+                <li class="itemProducto">
+                    <img src="../images/3080MSI10GB.jpg" alt="Placa de video VGA RTX 3080 MSI 10GB VENTUS LHR" class="imagen1">
+                    <h3 class="text-center text-black">Placa de Video</h3>
+                    <p class="text-center text-black">VGA RTX 3080 MSI 10GB VENTUS</p>
+                    <p class="text-center text-black" >Precio: $500000</p>
                     <button>Agregar al carrito</button>
-                </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
-                    <button>Agregar al carrito</button>
-                </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
-                    <button>Agregar al carrito</button>
-                </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
-                    <button>Agregar al carrito</button>
-                </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
-                    <button>Agregar al carrito</button>
-                </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
-                    <button>Agregar al carrito</button>
-                </div>
-            </li>
-            <li class="itemProducto">
-                <div class="card1">
-                    <img src="../images/placaMadre.jpg" alt="placa madre" class="imagen1">
-    
-                    <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $2000</p>
-                    <button>Agregar al carrito</button>
-                </div>
-            </li>
-        </ul>
-                   
-    </section>
+                </li>
 
-    <footer>
-        <div class="footer">
-            <ul>
-                <li class="itemFooter">
-                    <div class="containerFooter">
+                <li class="itemProducto">
+                    <img src="../images/GabineteCorsair100R.jpg" alt="Gabinete CORSAIR 100R VIDRIO TEMPLADO" class="imagen1">
+                    <h3 class="text-center text-black">Gabinete</h3>
+                    <p class="text-center text-black">CORSAIR 100R VIDRIO TEMPLADO</p>
+                    <p class="text-center text-black">Precio: $90000</p>
+                    <button>Agregar al carrito</button>
+                </li>
+
+                <li class="itemProducto">
+                    <img src="../images/SSD480GB.jpg" alt="SSD Kingston 480GB" class="imagen1">
+                    <h3 class="text-center text-black">Disco Solido</h3>
+                    <p class="text-center text-black">Kingston 480GB</p>
+                    <p class="text-center text-black">Precio: $30000</p>
+                    <button>Agregar al carrito</button>
+                </li>
+
+                <li class="itemProducto">
+                    <img src="../images/RazerKitty.jpg" alt="Auriculares Razer Kitty" class="imagen1">
+                    <h3 class="text-center text-black">Auriculares</h3>
+                    <p class="text-center text-black">KRAKEN BT KITTY EDITION QUARTZ</p>
+                    <p class="text-center text-black">Precio: $4200</p>
+                    <button>Agregar al carrito</button>
+                </li>
+
+                <li class="itemProducto">
+                    <img src="../images/CorsairK60.jpg" alt="Teclado CorsairK60" class="imagen1">
+                    <h3 class="text-center text-black">Teclado</h3>
+                    <p class="text-center text-black">CORSAIR K60 RED CHERRY</p>
+                    <p class="text-center text-black">Precio: $22000</p>
+                    <button>Agregar al carrito</button>
+                </li>
+                
+                <li class="itemProducto">
+                    <img src="../images/CamLogitech.jpg" alt="Webcam logitech C920" class="imagen1">
+                    <h3 class="text-center text-black">Webcam</h3>
+                    <p class="text-center text-black">LOGITECH C 920 S HD PRO</p>
+                    <p class="text-center text-black">Precio: $29523</p>
+                    <button>Agregar al carrito</button>
+                </li>
+                
+                <li class="itemProducto">
+                    <img src="../images/MicrofonoSnowball.jpg" alt="MicrofonoSnowball" class="imagen1">
+                    <h3 class="text-center text-black">Microfono</h3>
+                    <p class="text-center text-black">SNOWBALL ICE WHITE</p>
+                    <p class="text-center text-black">Precio: $19693</p>
+                    <button>Agregar al carrito</button>
+                </li>
+
+            </ul>          
+        </section>
+
+        <footer>
+            <div class="footer">
+                <ul class="footerGrid">
+                    <li class="itemFooter">
                         <h1>Contacto</h1>
-                        <ul class="footerList">
+                        <ul>
                             <li>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7952991293632!2d-60.640611284288916!3d-32.95641347971383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab57bd0eee41%3A0xeeb91ab8599cdd73!2sMetro%20Infinito!5e0!3m2!1ses-419!2sar!4v1647105406767!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <p>Numero de Whatsapp:<a href="https://wa.me/5493412608875" target="_blank"> +54 9 341-2608875</a></p>
                             </li>
                         
-                            <li>
-                                <p>Numero de Whatsapp:<a href="https://wa.me/5493412608875" target="_blank">+54 9 341-2608875</a></p>
-                            </li>
-    
                             <li>
                                 <p>Horario de atencion: 7:00 a 15:00</p>
                             </li>
                         </ul>
-                    </div>
-                </li>
-                <li class="itemFooter">
-                    <div class="containerFooter">
+                    </li>
+                    <li class="itemFooter">
                         <h1>Links de interes</h1>
-                        <ul class="footerList">
+                        <ul>
                             <li>
                                 Arma tu PC
                             </li>
+        
                             <li>
                                 <a href="../pages/empresa.html">La empresa</a>
                             </li>
@@ -252,13 +168,11 @@
                                 <a href="../pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
                             </li>
                         </ul>
-                    </div>
-                </li>
-        
-                <li class="itemFooter">
-                    <div class="containerFooter">
+                    </li>
+            
+                    <li class="itemFooter">
                         <h1>Data fiscal</h1>
-                        <ul class="footerList">
+                        <ul>
                             <li>
                                 <i class="fa-solid fa-lock"></i>
                             </li>
@@ -266,11 +180,11 @@
                                 <i class="fa-solid fa-shield"></i>
                             </li>
                         </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </footer>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/486f17122d.js" crossorigin="anonymous"></script>
 </html>

@@ -5,12 +5,18 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: rgb(11, 11, 41);
-
 }
 
+body::after{
+    content: '';
+    display: block;
+    height: 175px; /* Set same as footer's height */
+}
+  
 header{
     background-image: url(../images/headerpng.jpg);
     background-size:cover;
@@ -143,10 +149,10 @@ h2{
 }
 
 .listProducto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
-    margin: 0.5%
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-items: center;
+    width: 100%;
 }
 
 .itemProducto{
@@ -157,7 +163,6 @@ h2{
     padding: 2rem;
     width: min-content;
 }
-
 
 .imagen1 {
     display: block;
@@ -174,9 +179,13 @@ form{
     border: white;
 
 }
-.footer{
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-image: url(../images/footer.webp);
     background-size:contain; 
+    height: 175px;
 }
 .footerGrid{
     display: grid;
@@ -259,6 +268,8 @@ form{
     transform: translateY(0%);
     box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
     display:none;
+    
+
 }
 
 .nav a{
@@ -270,7 +281,9 @@ form{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all 300ms;
+    transition: all 150ms;
+    animation: entradaMenu 0.5s ease-in-out;
+    animation-direction: normal;
 }
 
 .nav a:hover{
@@ -287,6 +300,74 @@ form{
     box-shadow: 0 0 0 0 transparent;
 }
 
-@media screen {
+@keyframes entradaMenu{
+    0% { margin-top: -10%;}
+    100%{ margin-top: 0%;}
+}
+
+@media (max-width: 768px) {
+    
+    .menu{
+        margin-right: 5%;
+    }
+    
+    .gridHeader{
+        grid-template-columns: 1fr 2fr max-content min-content;
+    }
+
+    .listProducto{
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .itemProducto{
+        margin: 2%;
+        padding: 1.5rem;
+        width: 90%;
+    }
+    .imagen1{
+        width: 20vw;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .menu{
+        margin-right: 15%;
+    }
+    
+    .gridHeader{
+        grid-template-columns: 2fr 1fr max-content 0.5fr;
+    }
+
+    .listProducto{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+        width: 100%;
+    }
+
+    .itemProducto{
+        margin: 2%;
+        padding: 1.5rem;
+        width: 90%;
+    }
+    .imagen1{
+        width: 30vw;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .itemFooter{
+        color: azure;
+        font-size: medium;
+    }
+
+    .footerGrid{
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-template-columns: repeat(3, 33%);
+        padding: 0.5rem;
+    }
     
 }
