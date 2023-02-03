@@ -16,7 +16,11 @@ body::after{
     display: block;
     height: 175px; /* Set same as footer's height */
 }
-  
+.conteinerPaginaContacto::after{
+    content: '';
+    display: block;
+    height: 280px; /* Set same as footer's height */
+}
 header{
     background-image: url(../images/headerpng.jpg);
     background-size:cover;
@@ -84,6 +88,10 @@ h2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.itemPreg, .laEmpresa{
+    padding: 0.5%;
 }
 
 .slider{
@@ -179,7 +187,7 @@ form{
     border: white;
 
 }
-footer{
+footer, .footerContacto{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -187,14 +195,20 @@ footer{
     background-size:contain; 
     height: 175px;
 }
-.footerGrid{
+.footerGrid, .footerGridContacto{
     display: grid;
     align-items: start;
     justify-items: center;
     grid-template-columns: repeat(3, 33%);
     padding: 1.5rem;
 }
+.footerContacto{
+    height: 450px;
+}
 
+.footerGridContacto{
+    align-items: center;
+}
 
 .itemFooter{
     color: azure;
