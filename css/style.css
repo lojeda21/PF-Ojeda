@@ -14,12 +14,12 @@ body{
 body::after{
     content: '';
     display: block;
-    height: 175px; /* Set same as footer's height */
+    height: 175px;
 }
 .conteinerPaginaContacto::after{
     content: '';
     display: block;
-    height: 280px; /* Set same as footer's height */
+    height: 280px; 
 }
 header{
     background-image: url(../images/headerpng.jpg);
@@ -80,14 +80,6 @@ h2{
     display: flex;
     justify-content: center;
     margin-right: 2rem;
-}
-
-.conteinerBotones{
-    padding: 1vh 0 1vh 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .itemPreg, .laEmpresa{
@@ -269,7 +261,7 @@ footer, .footerContacto{
     top: 5%;
     right: 5%;
 }
-.nav{
+.desplegable{
     position: absolute;
     transform: translateY(-10%);
     opacity: 1;
@@ -286,7 +278,7 @@ footer, .footerContacto{
 
 }
 
-.nav a{
+.desplegable a{
     text-align: center;
     display: block;
     margin: 20px 0;
@@ -300,11 +292,11 @@ footer, .footerContacto{
     animation-direction: normal;
 }
 
-.nav a:hover{
+.desplegable a:hover{
     color: #5f5f5f;
 }
 
-#toggle:checked ~ .nav{
+#toggle:checked ~ .desplegable{
     opacity: 1;
     transform: translateY(10%);
     display: block;

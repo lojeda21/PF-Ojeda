@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
                 <span id="span3"></span>
             </label>
 
-            <nav class="nav">
+            <nav class="desplegable">
                 <a href="index.html">Inicio</a>
                 <a href="pages/producto.html">Productos</a>
                 <a href="pages/contacto.html">Contacto</a>
@@ -69,72 +70,73 @@
         </header>
         <!--Esto es una linea de botones y menus para viajar por la pagina-->
         <section>
-            <ul class="conteinerBotones">
-                <li class="botonesMenu">
-                    <input type="button" value="Arma tu PC">
+            <ul class="container-fluid justify-content-evenly nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Arma tu PC</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Componentes</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="#">Placas de video</a></li>
+                    <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                    <li><a class="dropdown-item" href="#">Discos Duros</a></li>
+                    <li><a class="dropdown-item" href="#">RAM</a></li>
+                    <li><a class="dropdown-item" href="#">Discos Solidos</a></li>
+                  </ul>
                 </li>
 
-                <li class="botonesMenu">
-                    <select name="" id="">
-                        <option value="" selected>Componentes</option>
-                        <option value="">Procesadores</option>
-                        <option value="">Placas de video</option>
-                        <option value="">Motherboards</option>
-                        <option value="">RAM</option>
-                        <option value="">Discos Duros</option>
-                        <option value="">Discos Solidos</option>
-                    </select>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Periféricos</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                      <li><a class="dropdown-item" href="#">Mouse</a></li>
+                      <li><a class="dropdown-item" href="#">Teclados</a></li>
+                      <li><a class="dropdown-item" href="#">Micrófonos</a></li>
+                      <li><a class="dropdown-item" href="#">Webcam</a></li>
+                    </ul>
+                  </li>
 
-                <li class="botonesMenu">
-                    <select name="" id="">
-                        <option value="" selected>Periféricos</option>
-                        <option value="">Auriculares</option>
-                        <option value="">Mouse</option>
-                        <option value="">Teclados</option>
-                        <option value="">Micrófonos</option>
-                        <option value="">Webcam</option>
-                    </select>
-                </li>
-
-                <li class="botonesMenu">
-                    <select name="" id="">
-                        <option value="" selected>Computadoras</option>
-                        <option value="">Gaming</option>
-                        <option value="">Diseño</option>
-                        <option value="">Hogar-Oficina</option>
-                    </select>
-                </li>
-
-                <li class="botonesMenu">
-                    <select name="" id="">
-                        <option value="" selected>Notebooks</option>
-                        <option value="">Hogar-Diseño 2D</option>
-                        <option value="">Gaming-Diseño 3D</option>                        
-                    </select>
-                </li>
-
-                <li class="botonesMenu">
-                    <input type="button" value="Monitores">
-                </li>
-
-                <li class="botonesMenu">
-                    <select name="" id="">
-                        <option value="" selected>Accesorios</option>
-                        <option value="">Adaptadores</option>
-                        <option value="">Cables</option>
-                        <option value="">Discos Externos</option>
-                        <option value="">Pendrives Y SD</option>
-                    </select>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Computadoras</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                    <li><a class="dropdown-item" href="#">Diseño</a></li>
+                    <li><a class="dropdown-item" href="#">Hogar-Oficina</a></li>
+                  </ul>
                 </li>
                 
-                <li class="botonesMenu">
-                    <input type="button" value="Conectividad">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Notebooks</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hogar-Diseño 2D</a></li>
+                      <li><a class="dropdown-item" href="#">Gaming-Diseño 3D</a></li>
+                    </ul>
+                  </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accesorios</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Adaptadores</a></li>
+                      <li><a class="dropdown-item" href="#">Cables</a></li>
+                      <li><a class="dropdown-item" href="#">Discos Externos</a></li>
+                      <li><a class="dropdown-item" href="#">Pendrives Y SD</a></li>
+                    </ul>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Monitores</a>
                 </li>
 
-                <li class="botonesMenu">
-                    <input type="button" value="Sillas">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conectividad</a>
                 </li>
+                
+                <li class="nav-item">               
+                    <a class="nav-link" href="#">Sillas</a>
+                </li>
+    
             </ul>
         </section>
 
@@ -254,7 +256,8 @@
             </ul>
 
         </footer>
-    </div>    
-</body>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/486f17122d.js" crossorigin="anonymous"></script>
+</body>
 </html>
