@@ -30,6 +30,7 @@ p, input, option, h1, ul, form, h2, div{
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    
 }
 
 ul{
@@ -42,6 +43,9 @@ a, p, div{
     color: azure;
 }
 
+p{
+    margin: 0;
+}
 h1{
     color: azure;
     font-size: 32px;
@@ -154,6 +158,7 @@ h2{
 .seccionProductos{
     display: grid;
     grid-template-rows: auto;
+    margin-bottom: 1%;
 }
 
 .tituloProd{
@@ -173,6 +178,7 @@ h2{
     width: min-content;
     display: grid;
     margin: 0.2rem;
+    grid-template-rows: max-content 10% 12% 15% 10%;
     background-color: white;
     padding: 2rem;
     align-content: space-around;
@@ -336,7 +342,7 @@ footer, .footerContacto{
     }
     
     .gridHeader{
-        grid-template-columns: 1fr 2fr max-content min-content;
+        grid-template-columns: 1fr 1fr max-content min-content;
     }
 
     .listProducto{
@@ -352,6 +358,9 @@ footer, .footerContacto{
         width: 20vw;
     }
     
+    .text-footer{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 420px) {
