@@ -1,0 +1,182 @@
+@import 'slider.scss';
+@import 'menu.scss';
+@import 'header.scss';
+@import 'productos.scss';
+@import 'footer.scss';
+
+$colortextos: azure;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(11, 11, 41);
+}
+
+body::after{
+    content: '';
+    display: block;
+    height: 175px;
+}
+.conteinerPaginaContacto::after{
+    content: '';
+    display: block;
+    height: 280px; 
+}
+
+p, input, option, h1, ul, form, h2, div{
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    
+}
+
+ul{
+    list-style: none;
+    color: $colortextos;
+}
+
+a, p, div{
+    text-decoration: none;
+    color: $colortextos;
+}
+
+p{
+    margin: 0;
+}
+h1{
+    color: $colortextos;
+    font-size: 32px;
+}
+
+h2{
+    margin-left: 20px;
+    color: $colortextos;
+    font-size: 25px;
+}
+
+.nav-link{
+    color: $colortextos;
+}
+
+.itemPreg, .laEmpresa{
+    padding: 0.5%;
+    margin: 1rem;
+}
+
+.answertext{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-black{
+    color: black;
+}
+.text-center {
+    text-align: center;
+}
+
+form{
+    display: block;
+    margin: 0% 0% 0% 40%;
+    padding: 1rem;
+    width: fit-content;
+    color: $colortextos;
+    border: solid 2px $colortextos;
+}
+
+@media (max-width: 768px) {
+    
+    .menu{
+        margin-right: 5%;
+    }
+    
+    .gridHeader{
+        grid-template-columns: 1fr 1fr max-content min-content;
+    }
+
+    .listProducto{
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .itemProducto{
+        margin: 2%;
+        padding: 1.5rem;
+        width: 90%;
+    }
+    .imagen1{
+        width: 20vw;
+    }
+    .footerGrid{
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-template-columns: 4fr 3fr 3fr;
+        padding: 10px 10px 0;
+    }
+
+    .text-footer{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .menu{
+        margin-right: 15%;
+    }
+    
+    .gridHeader{
+        grid-template-columns: 6fr 4fr 2fr;
+    }
+
+    .pregFrec{
+        display: none;
+    }
+    .listProducto{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+        width: 100%;
+    }
+
+    .itemProducto{
+        margin: 2%;
+        padding: 1.5rem;
+        width: 90%;
+    }
+    .nom-producto{
+        line-height:1.3rem;
+    }
+    .imagen1{
+        width: 30vw;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .itemFooter{
+        color: azure;
+    }
+
+    .footerGrid{
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-template-columns: 4fr 4fr 2fr;
+        padding: 5px 5px 0;
+    }
+    .titulo-footer{
+        padding-left:16px;
+    }
+    .itemFooter ul{
+        padding-left: 16px;
+    }
+    .text-footer{
+        font-size: 15px;
+    }
+
+}

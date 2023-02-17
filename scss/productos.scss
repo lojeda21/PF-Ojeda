@@ -1,0 +1,44 @@
+#productos {
+    height: auto;
+}
+
+.seccionProductos{
+    display: grid;
+    grid-template-rows: auto;
+    margin-bottom: 1%;
+}
+
+.tituloProd{
+    margin-left: 1.4%;
+    width: fit-content;
+}
+
+.listProducto{
+    display: grid;
+    padding: 0%;
+    grid-template-columns: repeat(5, 20%);
+    justify-items: center;
+    width: 100%;
+}
+
+.itemProducto{
+    width: min-content;
+    display: grid;
+    margin: 0.2rem;
+    grid-template-rows: max-content 10% 12% 15% 10%;
+    background-color: white;
+    padding: 2rem;
+    align-content: space-around;
+    box-shadow: 7px 7px 20px 0 rgba(0,0,0,1)
+}
+.btn-add,.price{
+    align-self: end;
+    font-weight: bolder;
+}
+
+.imagen1 {
+    display: block;
+    width: 12vw;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.3)
+}

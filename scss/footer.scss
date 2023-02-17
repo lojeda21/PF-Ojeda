@@ -1,0 +1,29 @@
+footer, .footerContacto{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../images/footer.webp);
+    background-size:contain; 
+    height: 175px;
+}
+.footerGrid, .footerGridContacto{
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    grid-template-columns: repeat(3, 33%);
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+}
+.footerContacto{
+    height: 450px;
+}
+
+.footerGridContacto{
+    align-items: center;
+}
+.titulo-footer{
+    padding-left: 32px;
+}
+.itemFooter{
+    color: azure;
+}
+
