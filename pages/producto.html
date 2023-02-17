@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,169 +23,237 @@
                 <span id="span3"></span>
             </label>
 
-            <nav class="nav">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/producto.html">Productos</a>
-                <a href="../pages/contacto.html">Contacto</a>
-                <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                <a href="../pages/empresa.html">Empresa</a>
+            <nav class="desplegable">
+                <a href="index.html">Inicio</a>
+                <a href="pages/producto.html">Productos</a>
+                <a href="pages/contacto.html">Contacto</a>
+                <a href="pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                <a href="pages/empresa.html">Empresa</a>
             </nav>
         </div>
 
-        <!--Esto es el header de toda la pagina, utilizo inconos sacados de la pagina
-        font awesome, el link esta abajo de todo fuera del body-->
         <header>
-            <div>
-                <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
-                <nav class="gridHeader">
-                        <!--Esto seria el buscador en un futuro-->
-                    <div class="buscadorHeader">
-                        <input type="text" class="busq"name="" id="">
-                    </div>
+            <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
+            <nav class="gridHeader">
+                    <!--Esto seria el buscador en un futuro-->
+                <div class="buscadorHeader">
+                    <input type="text" class="busq"name="" id="">
+                </div>
 
-                    <ul class="barraHeader">
-                        <li>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </li>
+                <ul class="barraHeader">
+                    <li>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </li>
 
-                        <li> 
-                            <i class="fa-brands fa-instagram"></i>
-                        </li>
+                    <li> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
 
-                        <li>
-                            <a href="https://wa.me/5493412608875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        </li>
-                    </ul>
+                    <li>
+                        <a href="https://wa.me/5493412608875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
 
-                    <div class="pregFrec">
-                            <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                    </div>
+                <div class="pregFrec">
+                        <a href="../pages/preguntasFrecuentes.html" class="text-center text-pregFrec">Preguntas Frecuentes</a>
+                </div>
 
-                    <div class="carrito">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <input type="button" value="Carrito">
-                    </div>
-                </nav>
+                <div class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button type="button" class="btn btn-light btn-carrito">Carrito</button>
+                </div>
+            </nav>
         </header>
 
-        <section id="productos" class="seccionProductos">
-            <a href="..pages/producto.html" class="tituloProd"><h1>Productos</h1></a>
-            <ul class="listProducto">
+        <!--Esto es una linea de botones de navegación para un futuro cuando tenga base de datos-->
+        <div class="border-bottom">
+            <ul class="container justify-content-evenly nav nav-pills ">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Arma tu PC</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Componentes</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="#">Placas de video</a></li>
+                    <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                    <li><a class="dropdown-item" href="#">Discos Duros</a></li>
+                    <li><a class="dropdown-item" href="#">RAM</a></li>
+                    <li><a class="dropdown-item" href="#">Discos Solidos</a></li>
+                  </ul>
+                </li>
 
-                <li class="itemProducto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Periféricos</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Auriculares</a></li>
+                      <li><a class="dropdown-item" href="#">Mouse</a></li>
+                      <li><a class="dropdown-item" href="#">Teclados</a></li>
+                      <li><a class="dropdown-item" href="#">Micrófonos</a></li>
+                      <li><a class="dropdown-item" href="#">Webcam</a></li>
+                    </ul>
+                  </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Computadoras</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                    <li><a class="dropdown-item" href="#">Diseño</a></li>
+                    <li><a class="dropdown-item" href="#">Hogar-Oficina</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Notebooks</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hogar-Diseño 2D</a></li>
+                      <li><a class="dropdown-item" href="#">Gaming-Diseño 3D</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Accesorios</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Adaptadores</a></li>
+                      <li><a class="dropdown-item" href="#">Cables</a></li>
+                      <li><a class="dropdown-item" href="#">Discos Externos</a></li>
+                      <li><a class="dropdown-item" href="#">Pendrives Y SD</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Monitores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conectividad</a>
+                </li>
+
+                <li class="nav-item">               
+                    <a class="nav-link" href="#">Sillas</a>
+                </li>
+            </ul>
+        </div>
+        
+        <section id="productos" class="seccionProductos">
+            <a href="../pages/producto.html" class="tituloProd"><h1>Productos</h1></a>
+            <div class="listProducto">
+
+                <div class="itemProducto">
                     <img src="../images/placaMadre.jpg" alt="Paca madre IGAME Z490 VULCAN" class="imagen1">
                     <h3 class="text-center text-black">Placa Madre</h3>
-                    <p class="text-center text-black">IGAME Z490 VULCAN</p>
-                    <p class="text-center text-black">Precio: $200000</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">IGAME Z490 VULCAN</p>
+                    <p class="text-center text-black price">Precio: $200000</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/3080MSI10GB.jpg" alt="Placa de video VGA RTX 3080 MSI 10GB VENTUS LHR" class="imagen1">
                     <h3 class="text-center text-black">Placa de Video</h3>
-                    <p class="text-center text-black">VGA RTX 3080 MSI 10GB VENTUS</p>
-                    <p class="text-center text-black" >Precio: $500000</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">VGA RTX 3080 MSI 10GB VENTUS</p>
+                    <p class="text-center text-black price" >Precio: $500000</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/GabineteCorsair100R.jpg" alt="Gabinete CORSAIR 100R VIDRIO TEMPLADO" class="imagen1">
                     <h3 class="text-center text-black">Gabinete</h3>
-                    <p class="text-center text-black">CORSAIR 100R VIDRIO TEMPLADO</p>
-                    <p class="text-center text-black">Precio: $90000</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">CORSAIR 100R VIDRIO TEMPLADO</p>
+                    <p class="text-center text-black price">Precio: $90000</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/SSD480GB.jpg" alt="SSD Kingston 480GB" class="imagen1">
                     <h3 class="text-center text-black">Disco Solido</h3>
-                    <p class="text-center text-black">Kingston 480GB</p>
-                    <p class="text-center text-black">Precio: $30000</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">KINGSTON 480GB</p>
+                    <p class="text-center text-black price">Precio: $30000</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/RazerKitty.jpg" alt="Auriculares Razer Kitty" class="imagen1">
                     <h3 class="text-center text-black">Auriculares</h3>
-                    <p class="text-center text-black">KRAKEN BT KITTY EDITION QUARTZ</p>
-                    <p class="text-center text-black">Precio: $4200</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">KRAKEN BT KITTY EDITION QUARTZ</p>
+                    <p class="text-center text-black price">Precio: $4200</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/CorsairK60.jpg" alt="Teclado CorsairK60" class="imagen1">
                     <h3 class="text-center text-black">Teclado</h3>
-                    <p class="text-center text-black">CORSAIR K60 RED CHERRY</p>
-                    <p class="text-center text-black">Precio: $22000</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">CORSAIR K60 RED CHERRY</p>
+                    <p class="text-center text-black price">Precio: $22000</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
                 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/CamLogitech.jpg" alt="Webcam logitech C920" class="imagen1">
                     <h3 class="text-center text-black">Webcam</h3>
-                    <p class="text-center text-black">LOGITECH C 920 S HD PRO</p>
-                    <p class="text-center text-black">Precio: $29523</p>
-                    <button>Agregar al carrito</button>
-                </li>
+                    <p class="text-center text-black nom-producto">LOGITECH C 920 S HD PRO</p>
+                    <p class="text-center text-black price">Precio: $29523</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>
                 
-                <li class="itemProducto">
+                <div class="itemProducto">
                     <img src="../images/MicrofonoSnowball.jpg" alt="MicrofonoSnowball" class="imagen1">
                     <h3 class="text-center text-black">Microfono</h3>
-                    <p class="text-center text-black">SNOWBALL ICE WHITE</p>
-                    <p class="text-center text-black">Precio: $19693</p>
-                    <button>Agregar al carrito</button>
-                </li>
-
-            </ul>          
+                    <p class="text-center text-black nom-producto">SNOWBALL ICE WHITE</p>
+                    <p class="text-center text-black price">Precio: $19693</p>
+                    <button class="btn-add">Agregar al carrito</button>
+                </div>         
+            </div>          
         </section>
 
         <footer>
-            <div class="footer">
-                <ul class="footerGrid">
-                    <li class="itemFooter">
-                        <h1>Contacto</h1>
-                        <ul>
-                            <li>
-                                <p>Numero de Whatsapp:<a href="https://wa.me/5493412608875" target="_blank"> +54 9 341-2608875</a></p>
-                            </li>
-                        
-                            <li>
-                                <p>Horario de atencion: 7:00 a 15:00</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="itemFooter">
-                        <h1>Links de interes</h1>
-                        <ul>
-                            <li>
-                                Arma tu PC
-                            </li>
+            <section class="footerGrid">
+
+                <div class="itemFooter">
+                    <h1 class="titulo-footer"><a href="pages/contacto.html">Contacto</a></h1>
+                    <ul>
+                        <li>
+                            <p class="text-footer"><i class="fa-brands fa-whatsapp"></i> :<a href="https://wa.me/5493412608875" target="_blank"> +54 9 341-2608875</a></p>
+                        </li>
+                    
+                        <li>
+                            <p class="text-footer">Horario: 7:00 a 15:00</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="itemFooter">
+                    <h1 class="titulo-footer">Links de interes</h1>
+                    <ul class="">
+                        <li>
+                            <p class="text-footer">Arma tu PC</p>
+                        </li>
+
+                        <li>
+                            <a href="../pages/empresa.html" class="text-footer">La empresa</a>
+                        </li>
+                    
+                        <li>
+                            <a href="../pages/preguntasFrecuentes.html" class="text-footer">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
         
-                            <li>
-                                <a href="../pages/empresa.html">La empresa</a>
-                            </li>
-                        
-                            <li>
-                                <a href="../pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
-                            </li>
-                        </ul>
-                    </li>
-            
-                    <li class="itemFooter">
-                        <h1>Data fiscal</h1>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-lock"></i>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-shield"></i>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                <div class="itemFooter">
+                    <h1 class="titulo-footer">Data fiscal</h1>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-lock"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-shield"></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </footer>
     </div>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/486f17122d.js" crossorigin="anonymous"></script>
+</body>
 </html>

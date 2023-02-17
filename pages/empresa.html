@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,58 +13,57 @@
     <title>Fiduxion</title>
 </head>
 <body>
-        <!--Boton flotante de menu-->
-        <div class="menu">
-            <input type="checkbox" id="toggle">
-            <label for="toggle" class="button-menu">
-                <span id="span1"></span>
-                <span id="span2"></span>
-                <span id="span3"></span>
-            </label>
+    <!--Boton flotante de menu-->
+    <div class="menu">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="button-menu">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+        </label>
 
-            <nav class="nav">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/producto.html">Productos</a>
-                <a href="../pages/contacto.html">Contacto</a>
-                <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                <a href="../pages/empresa.html">Empresa</a>
-            </nav>
-        </div>
+        <nav class="desplegable">
+            <a href="index.html">Inicio</a>
+            <a href="pages/producto.html">Productos</a>
+            <a href="pages/contacto.html">Contacto</a>
+            <a href="pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
+            <a href="pages/empresa.html">Empresa</a>
+        </nav>
+    </div>
 
     <!--Esto es el header de toda la pagina, utilizo inconos sacados de la pagina
     font awesome, el link esta abajo de todo fuera del body-->
     <header>
-        <div>
-            <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
-            <nav class="gridHeader">
-                    <!--Esto seria el buscador en un futuro-->
-                <div class="buscadorHeader">
-                    <input type="text" class="busq"name="" id="">
-                </div>
+        <a href="../index.html"><img src="../images/logo.png" alt="logo Fiduxion" ></a>
+        <nav class="gridHeader">
+                <!--Esto seria el buscador en un futuro-->
+            <div class="buscadorHeader">
+                <input type="text" class="busq"name="" id="">
+            </div>
 
-                <ul class="barraHeader">
-                    <li>
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </li>
+            <ul class="barraHeader">
+                <li>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </li>
 
-                    <li> 
-                        <i class="fa-brands fa-instagram"></i>
-                    </li>
+                <li> 
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
 
-                    <li>
-                        <a href="https://wa.me/5493412608875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    </li>
-                </ul>
+                <li>
+                    <a href="https://wa.me/5493412608875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+            </ul>
 
-                <div class="pregFrec">
-                        <a href="../pages/preguntasFrecuentes.html">Preguntas Frecuentes</a>
-                </div>
+            <div class="pregFrec">
+                    <a href="../pages/preguntasFrecuentes.html" class="text-center text-pregFrec">Preguntas Frecuentes</a>
+            </div>
 
-                <div class="carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <input type="button" value="Carrito">
-                </div>
-            </nav>
+            <div class="carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button type="button" class="btn btn-light btn-carrito">Carrito</button>
+            </div>
+        </nav>
     </header>
 
     <div class="laEmpresa">
@@ -78,51 +78,51 @@
     </div>
 
     <footer>
-        <div class="footer">
-            <ul class="footerGrid">
-                <li class="itemFooter">
-                    <h1>Contacto</h1>
-                    <ul>
-                        <li>
-                            <p>Numero de Whatsapp:<a href="https://wa.me/5493412608875" target="_blank"> +54 9 341-2608875</a></p>
-                        </li>
-                    
-                        <li>
-                            <p>Horario de atencion: 7:00 a 15:00</p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="itemFooter">
-                    <h1>Links de interes</h1>
-                    <ul>
-                        <li>
-                            Arma tu PC
-                        </li>
+        <section class="footerGrid">
+            <div class="itemFooter">
+                <h1 class="titulo-footer"><a href="pages/contacto.html">Contacto</a></h1>
+                <ul>
+                    <li>
+                        <p class="text-footer"><i class="fa-brands fa-whatsapp"></i> :<a href="https://wa.me/5493412608875" target="_blank"> +54 9 341-2608875</a></p>
+                    </li>
+                
+                    <li>
+                        <p class="text-footer">Horario: 7:00 a 15:00</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="itemFooter">
+                <h1 class="titulo-footer">Links de interes</h1>
+                <ul class="">
+                    <li>
+                        <p class="text-footer">Arma tu PC</p>
+                    </li>
+
+                    <li>
+                        <a href="../pages/empresa.html" class="text-footer">La empresa</a>
+                    </li>
+                
+                    <li>
+                        <a href="../pages/preguntasFrecuentes.html" class="text-footer">Preguntas frecuentes</a>
+                    </li>
+                </ul>
+            </div>
     
-                        <li>
-                            <a href="../pages/empresa.html">La empresa</a>
-                        </li>
-                    
-                        <li>
-                            <a href="../pages/preguntasFrecuentes.html">Preguntas frecuentes</a>
-                        </li>
-                    </ul>
-                </li>
-        
-                <li class="itemFooter">
-                    <h1>Data fiscal</h1>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-lock"></i>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-shield"></i>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            <div class="itemFooter">
+                <h1 class="titulo-footer">Data fiscal</h1>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-lock"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shield"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/486f17122d.js" crossorigin="anonymous"></script>    
 </body>
-<script src="https://kit.fontawesome.com/486f17122d.js" crossorigin="anonymous"></script>
 </html>

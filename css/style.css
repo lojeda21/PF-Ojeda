@@ -60,7 +60,7 @@ h2{
 .gridHeader{
     display: grid;
     padding-bottom: 0.5vh;
-    grid-template-columns: 0.8fr 4.2fr max-content min-content;
+    grid-template-columns: 1.5fr 4.2fr max-content min-content;
 }
 
 .barraHeader{
@@ -101,8 +101,13 @@ h2{
 }
 .itemPreg, .laEmpresa{
     padding: 0.5%;
+    margin: 1rem;
 }
 
+.answertext{
+    text-align: justify;
+    text-justify: inter-word;
+}
 .slider{
     width: 100%;
     height: auto;
@@ -162,7 +167,7 @@ h2{
 }
 
 .tituloProd{
-    margin-left: 0.5%;
+    margin-left: 1.4%;
     width: fit-content;
 }
 
@@ -186,6 +191,7 @@ h2{
 }
 .btn-add,.price{
     align-self: end;
+    font-weight: bolder;
 }
 
 .imagen1 {
@@ -225,7 +231,9 @@ footer, .footerContacto{
 .footerGridContacto{
     align-items: center;
 }
-
+.titulo-footer{
+    padding-left: 32px;
+}
 .itemFooter{
     color: azure;
 }
@@ -284,6 +292,7 @@ footer, .footerContacto{
     margin: auto;
     top: 5%;
     right: 5%;
+    z-index: 1;
 }
 .desplegable{
     position: absolute;
@@ -296,9 +305,9 @@ footer, .footerContacto{
     width: 150px;
     border-radius: 5px;
     transform: translateY(0%);
-    box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.5);
     display:none;
-    
+    border: solid 1px black;
 
 }
 
@@ -357,7 +366,14 @@ footer, .footerContacto{
     .imagen1{
         width: 20vw;
     }
-    
+    .footerGrid{
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-template-columns: 4fr 3fr 3fr;
+        padding: 10px 10px 0;
+    }
+
     .text-footer{
         font-size: 18px;
     }
@@ -369,9 +385,12 @@ footer, .footerContacto{
     }
     
     .gridHeader{
-        grid-template-columns: 2fr 1fr max-content 0.5fr;
+        grid-template-columns: 6fr 4fr 2fr;
     }
 
+    .pregFrec{
+        display: none;
+    }
     .listProducto{
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -384,6 +403,9 @@ footer, .footerContacto{
         padding: 1.5rem;
         width: 90%;
     }
+    .nom-producto{
+        line-height:1.3rem;
+    }
     .imagen1{
         width: 30vw;
     }
@@ -392,15 +414,23 @@ footer, .footerContacto{
     }
     .itemFooter{
         color: azure;
-        font-size: medium;
     }
 
     .footerGrid{
         display: grid;
         align-items: start;
         justify-items: center;
-        grid-template-columns: repeat(3, 33%);
-        padding: 0.5rem;
+        grid-template-columns: 4fr 4fr 2fr;
+        padding: 5px 5px 0;
     }
-    
+    .titulo-footer{
+        padding-left:16px;
+    }
+    .itemFooter ul{
+        padding-left: 16px;
+    }
+    .text-footer{
+        font-size: 15px;
+    }
+
 }
