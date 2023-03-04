@@ -1,2 +1,14 @@
 node_modules
 *.json
+scss/slider.css.map
+scss/productos.css
+scss/productos.css.map
+scss/slider.css
+scss/menu.css
+scss/menu.css.map
+scss/footer.css
+scss/footer.css.map
+scss/header.css
+scss/header.css.map
+scss/main.css
+scss/main.css.map

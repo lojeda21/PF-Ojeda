@@ -65,10 +65,14 @@ h2{
 }
 
 .itemPreg, .laEmpresa{
-    padding: 0.5%;
-    margin: 1rem;
+    padding: 0.5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-
+.colpregunta{
+    margin-top: 5px;
+}
 .answertext{
     text-align: justify;
     text-justify: inter-word;
@@ -93,10 +97,6 @@ form{
 @media (max-width: 768px) {
     /* a corregir: preguntas frecuentes se ve horrible,
     sacá bootstrap y usa el normal, más fácil*/
-    .menu{
-        margin-right: 5%;
-    }
-    
     .gridHeader{
         grid-template-columns: 1fr 1fr max-content min-content;
     }
@@ -127,9 +127,6 @@ form{
 }
 
 @media (max-width: 420px) {
-    .menu{
-        margin-right: 15%;
-    }
     
     .gridHeader{
         grid-template-columns: 6fr 4fr 2fr;

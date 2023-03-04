@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .slider {
   width: 100%;
   height: auto;
@@ -85,7 +86,7 @@
   position: fixed;
   margin: auto;
   top: 5%;
-  right: 5%;
+  right: 5rem;
   z-index: 1; }
 
 .desplegable {
@@ -282,8 +283,13 @@ h2 {
   color: azure; }
 
 .itemPreg, .laEmpresa {
-  padding: 0.5%;
-  margin: 1rem; }
+  padding: 0.5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+.colpregunta {
+  margin-top: 5px; }
 
 .answertext {
   text-align: justify;
@@ -304,8 +310,8 @@ form {
   border: solid 2px azure; }
 
 @media (max-width: 768px) {
-  .menu {
-    margin-right: 5%; }
+  /* a corregir: preguntas frecuentes se ve horrible,
+    sacá bootstrap y usa el normal, más fácil*/
   .gridHeader {
     grid-template-columns: 1fr 1fr max-content min-content; }
   .listProducto {
@@ -326,8 +332,6 @@ form {
     font-size: 18px; } }
 
 @media (max-width: 420px) {
-  .menu {
-    margin-right: 15%; }
   .gridHeader {
     grid-template-columns: 6fr 4fr 2fr; }
   .pregFrec {
