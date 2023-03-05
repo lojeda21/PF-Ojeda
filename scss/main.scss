@@ -26,7 +26,7 @@ body::after{
 .conteinerPaginaContacto::after{
     content: '';
     display: block;
-    height: 280px; 
+    height: 225px; 
 }
 
 p, input, option, h1, ul, form, h2, div{
@@ -34,6 +34,11 @@ p, input, option, h1, ul, form, h2, div{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     
+}
+
+iframe{
+    width: 250px;
+    height: 250px;
 }
 
 ul{
@@ -64,15 +69,27 @@ h2{
     color: $colortextos;
 }
 
-.itemPreg, .laEmpresa{
+.laEmpresa{
+    
+    margin: 20px;
+    p{
+        color:black;
+        line-height: 32 px;
+        font-size: x-large;
+    }
+}
+
+.itemPreg{
     padding: 0.5px;
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 .colpregunta{
     margin-top: 5px;
 }
+
 .answertext{
     text-align: justify;
     text-justify: inter-word;
@@ -86,14 +103,49 @@ h2{
 }
 
 form{
-    display: block;
-    margin: 0% 0% 0% 40%;
-    padding: 1rem;
+    padding: 2rem;
     width: fit-content;
-    color: $colortextos;
-    border: solid 2px $colortextos;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px $colortextos;
+    border-radius: 5%;
+    input {
+        width: 90%;
+        height: 30px;
+        margin: 0.5rem;
+    }
+    button {
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+    }
+}   
+@media (max-width: 954px){
+    .listProducto{
+        grid-template-columns: repeat(3, 33%);
+    }
+    .imagen1{
+        width: 20vw;
+    }
 }
-
+@media (max-width: 850px){
+    .footerGridContacto{
+        grid-template-columns: 50% 25% 25%;
+    }
+    .footerContacto{
+        height: 350px;
+    }
+    .conteinerPaginaContacto::after{
+        height: 200px; 
+    }
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+}
 @media (max-width: 768px) {
     /* a corregir: preguntas frecuentes se ve horrible,
     sacá bootstrap y usa el normal, más fácil*/
@@ -102,16 +154,16 @@ form{
     }
 
     .listProducto{
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(2, 50%);
     }
 
     .itemProducto{
         margin: 2%;
         padding: 1.5rem;
-        width: 90%;
+        width: 75%;
     }
     .imagen1{
-        width: 20vw;
+        width: 30vw;
     }
     .footerGrid{
         display: grid;
@@ -123,6 +175,25 @@ form{
 
     .text-footer{
         font-size: 18px;
+    }
+    .footerGridContacto{
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+        grid-template-columns: 50% 30% 20%;
+    }
+}
+@media (max-width: 508px) {
+    .pregFrec{
+        display: none;
+    }
+    .itemProducto{
+        margin: 2%;
+        padding: 1.5rem;
+        width: 90%;
+    }
+    .footerGridContacto{
+        h1{
+            padding-left: 8px;
+        }
     }
 }
 

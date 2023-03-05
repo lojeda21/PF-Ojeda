@@ -10,15 +10,15 @@ footer, .footerContacto{
     display: grid;
     align-items: start;
     justify-items: center;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: 40% 30% 30%;
     padding: 1.5rem 1.5rem 0rem 1.5rem;
 }
 .footerContacto{
-    height: 450px;
+    height: 400px;
 }
-
 .footerGridContacto{
     align-items: center;
+
 }
 .titulo-footer{
     padding-left: 32px;

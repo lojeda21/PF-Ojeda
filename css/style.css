@@ -182,19 +182,20 @@ header {
 .listProducto {
   display: grid;
   padding: 0%;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(4, 25%);
   justify-items: center;
   width: 100%; }
 
 .itemProducto {
-  width: min-content;
+  width: 80%;
   display: grid;
   margin: 0.2rem;
   grid-template-rows: max-content 10% 12% 15% 10%;
   background-color: white;
   padding: 2rem;
   align-content: space-around;
-  box-shadow: 7px 7px 20px 0 black; }
+  box-shadow: 7px 7px 20px 0 black;
+  border-radius: 2%; }
 
 .btn-add, .price {
   align-self: end;
@@ -218,11 +219,11 @@ footer, .footerContacto {
   display: grid;
   align-items: start;
   justify-items: center;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: 40% 30% 30%;
   padding: 1.5rem 1.5rem 0rem 1.5rem; }
 
 .footerContacto {
-  height: 450px; }
+  height: 400px; }
 
 .footerGridContacto {
   align-items: center; }
@@ -252,12 +253,16 @@ body::after {
 .conteinerPaginaContacto::after {
   content: '';
   display: block;
-  height: 280px; }
+  height: 225px; }
 
 p, input, option, h1, ul, form, h2, div {
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
   font-size: 20px; }
+
+iframe {
+  width: 250px;
+  height: 250px; }
 
 ul {
   list-style: none;
@@ -282,7 +287,14 @@ h2 {
 .nav-link {
   color: azure; }
 
-.itemPreg, .laEmpresa {
+.laEmpresa {
+  margin: 20px; }
+  .laEmpresa p {
+    color: black;
+    line-height: 32 px;
+    font-size: x-large; }
+
+.itemPreg {
   padding: 0.5px;
   margin-right: 10px;
   margin-top: 5px;
@@ -302,12 +314,40 @@ h2 {
   text-align: center; }
 
 form {
-  display: block;
-  margin: 0% 0% 0% 40%;
-  padding: 1rem;
+  padding: 2rem;
   width: fit-content;
-  color: azure;
-  border: solid 2px azure; }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px azure;
+  border-radius: 5%; }
+  form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem; }
+  form button {
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer; }
+
+@media (max-width: 954px) {
+  .listProducto {
+    grid-template-columns: repeat(3, 33%); }
+  .imagen1 {
+    width: 20vw; } }
+
+@media (max-width: 850px) {
+  .footerGridContacto {
+    grid-template-columns: 50% 25% 25%; }
+  .footerContacto {
+    height: 350px; }
+  .conteinerPaginaContacto::after {
+    height: 200px; }
+  iframe {
+    width: 200px;
+    height: 200px; } }
 
 @media (max-width: 768px) {
   /* a corregir: preguntas frecuentes se ve horrible,
@@ -315,13 +355,13 @@ form {
   .gridHeader {
     grid-template-columns: 1fr 1fr max-content min-content; }
   .listProducto {
-    grid-template-columns: repeat(3, 33%); }
+    grid-template-columns: repeat(2, 50%); }
   .itemProducto {
     margin: 2%;
     padding: 1.5rem;
-    width: 90%; }
+    width: 75%; }
   .imagen1 {
-    width: 20vw; }
+    width: 30vw; }
   .footerGrid {
     display: grid;
     align-items: start;
@@ -329,7 +369,20 @@ form {
     grid-template-columns: 4fr 3fr 3fr;
     padding: 10px 10px 0; }
   .text-footer {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .footerGridContacto {
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    grid-template-columns: 50% 30% 20%; } }
+
+@media (max-width: 508px) {
+  .pregFrec {
+    display: none; }
+  .itemProducto {
+    margin: 2%;
+    padding: 1.5rem;
+    width: 90%; }
+  .footerGridContacto h1 {
+    padding-left: 8px; } }
 
 @media (max-width: 420px) {
   .gridHeader {

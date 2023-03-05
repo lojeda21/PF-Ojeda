@@ -16,20 +16,21 @@
 .listProducto{
     display: grid;
     padding: 0%;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(4, 25%);
     justify-items: center;
     width: 100%;
 }
 
 .itemProducto{
-    width: min-content;
+    width: 80%;
     display: grid;
     margin: 0.2rem;
     grid-template-rows: max-content 10% 12% 15% 10%;
     background-color: white;
     padding: 2rem;
     align-content: space-around;
-    box-shadow: 7px 7px 20px 0 rgba(0,0,0,1)
+    box-shadow: 7px 7px 20px 0 rgba(0,0,0,1);
+    border-radius: 2%;
 }
 .btn-add,.price{
     align-self: end;
